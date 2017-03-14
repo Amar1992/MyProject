@@ -8,7 +8,18 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController{
+    
+
+
+}
+@property (strong, nonatomic) IBOutlet UITextField *uname;
+@property (strong, nonatomic) IBOutlet UITextField *password;
+
+@property (strong, nonatomic) IBOutlet NSString *username;
+@property (strong, nonatomic) IBOutlet NSString *passwrd;
+
+- (IBAction)login:(id)sender;
 
 
 @end
