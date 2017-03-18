@@ -8,6 +8,7 @@
 
 #import "profileview.h"
 #import "homepage.h"
+#import "updateprofile.h"
 
 
 @interface profileview ()
@@ -22,10 +23,12 @@
     
    // homepage *myView = (homepage *)self.inputViewController;
     
-   NSLog(@"my url is %@",self.url);
+    NSString *myUrl = [NSString stringWithFormat:@"http://144.217.163.57:8080/cegepgim/mobile/mycall/userProfile&%1$@&%2$@",self.uname,self.password];
+    
+   NSLog(@"my url is %@",myUrl);
     
     NSURLSession *mySession = [NSURLSession sharedSession];
-    [[mySession dataTaskWithURL:[NSURL URLWithString:self.url] completionHandler:^(NSData * data, NSURLResponse * response, NSError * error) {
+    [[mySession dataTaskWithURL:[NSURL URLWithString:myUrl] completionHandler:^(NSData * data, NSURLResponse * response, NSError * error) {
         if (data.length > 0 && error == nil) {
             NSDictionary *myMainJsonObject=[NSJSONSerialization JSONObjectWithData:
                                             data options:0 error : NULL];
@@ -53,6 +56,17 @@
             
         }
     }]resume];
+    
+}
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    
+    
+    if ([segue.identifier isEqualToString:@"uprofile"]) {
+        updateprofile *myView=(updateprofile *)segue.destinationViewController;
+        
+        
+        myView.uid = [self.uid text];
+    }
 }
 
 

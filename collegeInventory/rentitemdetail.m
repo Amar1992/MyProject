@@ -1,18 +1,18 @@
 //
-//  requestdetail.m
+//  rentitemdetail.m
 //  collegeInventory
 //
-//  Created by admin on 2017-03-13.
+//  Created by admin on 2017-03-15.
 //  Copyright © 2017 admin. All rights reserved.
 //
 
-#import "requestdetail.h"
+#import "rentitemdetail.h"
 
-@interface requestdetail ()
+@interface rentitemdetail ()
 
 @end
 
-@implementation requestdetail
+@implementation rentitemdetail
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -28,18 +28,17 @@
             NSDictionary *myMainJsonObject=[NSJSONSerialization JSONObjectWithData:data options:0 error:NULL];
             
             
-            NSArray *result = [myMainJsonObject objectForKey:@"RequestItem_Detail"];
+            NSArray *result = [myMainJsonObject objectForKey:@"RentItems_Detail"];
             
             for (NSDictionary *myobject in result){
                 
-                
                 self.iname.text = [myobject objectForKey:@"Item_Name"];
                 
-                self.category.text=[myobject objectForKey:@"Category"];
+                self.sdate.text=[myobject objectForKey:@"StartDate"];
                 
                 self.uname.text = [[myobject objectForKey:@"User_Id"]stringValue];
                 
-                self.descp.text = [myobject objectForKey:@"Description"];
+                self.edate.text = [myobject objectForKey:@"EndDate"];
             }
         }
     }]resume];

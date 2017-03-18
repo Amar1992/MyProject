@@ -27,11 +27,6 @@
             NSDictionary *myMainJsonObject=[NSJSONSerialization JSONObjectWithData:
                                             data options:0 error : NULL];
             
-            
-            
-        
-            
-            
             NSArray *result = [myMainJsonObject objectForKey:@"Items_Detail"];
             
             if ( [result count] == 0 ) {

@@ -12,6 +12,8 @@
     
 }
 @property (strong, nonatomic) IBOutlet NSString *url;
+@property (strong, nonatomic) IBOutlet NSString *uname;
+@property (strong, nonatomic) IBOutlet NSString *password;
 
 @property (strong, nonatomic) IBOutlet UITextField *fname;
 @property (strong, nonatomic) IBOutlet UITextField *lname;

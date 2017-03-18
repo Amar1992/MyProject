@@ -9,7 +9,6 @@
 #import "homepage.h"
 #import "profileview.h"
 #import "ViewController.h"
-
 @interface homepage ()
 
 @end
@@ -22,23 +21,23 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 
-    
+   
     
 }
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     
     
-    
     if ([segue.identifier isEqualToString:@"myprofile"]) {
         profileview *myView=(profileview *)segue.destinationViewController;
         
+       myView.uname = self.username;
+       myView.password = self.passwrd;
         
-        
-        NSString *myUrl = [NSString stringWithFormat:@"http://144.217.163.57:8080/cegepgim/mobile/mycall/userProfile&%1$@&%2$@",self.username,self.passwrd];
+       // NSString *myUrl = [NSString stringWithFormat:@"http://144.217.163.57:8080/cegepgim/mobile/mycall/userProfile&%1$@&%2$@",self.username,self.passwrd];
     
         
         
-        myView.url = myUrl;
+       //myView.url = myUrl;
         
     }
     
@@ -64,5 +63,7 @@
 */
 
 - (IBAction)myaccount:(id)sender {
+    
+      
 }
 @end

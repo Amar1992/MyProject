@@ -1,38 +1,36 @@
 //
-//  myItems.m
+//  rentItem.m
 //  collegeInventory
 //
-//  Created by admin on 2017-03-12.
+//  Created by admin on 2017-03-14.
 //  Copyright © 2017 admin. All rights reserved.
 //
 
-#import "myItems.h"
+#import "rentItem.h"
 #import "myfile2.h"
 
-@interface myItems ()
+
+@interface rentItem ()
 
 @end
 
-@implementation myItems
+@implementation rentItem
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     
-    if ([segue.identifier isEqualToString:@"finditem"]) {
+    if ([segue.identifier isEqualToString:@"ritemdetail"]) {
         myfile2 *myView=(myfile2 *)segue.destinationViewController;
         
-        NSString *cat = self.Category.text;
+        NSString *cat = self.category.text;
         
-        NSString *itemname = self.itemName.text;
+        NSString *itemname = self.iname.text;
         
         NSString *myUrl=[ NSString stringWithFormat:@"http://144.217.163.57:8080/cegepgim/mobile/mycall/searchItem&%1$@",itemname];
         
@@ -45,6 +43,12 @@
 }
 
 
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
 /*
 #pragma mark - Navigation
 
@@ -55,9 +59,12 @@
 }
 */
 
+- (IBAction)myItem:(id)sender {
+}
+
 - (IBAction)findItem:(id)sender {
     
-    if([self.itemName.text isEqual:@""] && [self.Category.text isEqual:@""])
+    if([self.iname.text isEqual:@""] && [self.category.text isEqual:@""])
         
     {
         
@@ -76,14 +83,5 @@
         
     }
 
-    
-    
-}
-
-- (IBAction)addItem:(id)sender {
-    
-    
-    
-    
 }
 @end

@@ -16,6 +16,8 @@
 
 @implementation ViewController
 
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
@@ -25,12 +27,14 @@
     
     
     
+    
     if ([segue.identifier isEqualToString:@"Home"]) {
         homepage *myView=(homepage *)segue.destinationViewController;
         
+        
+        
         myView.username = self.uname.text;
         myView.passwrd = self.password.text;
-        
        
     }
 }
@@ -46,8 +50,7 @@
     
     
     
-    
-    if([self.uname.text isEqual:@""] && [self.password.text isEqual:@""])
+    if([self.uname.text isEqual:@""] || [self.password.text isEqual:@""])
         
     {
         
@@ -62,10 +65,11 @@
         [alert addAction :defaultAction ];
         [ self presentViewController : alert animated: YES completion : nil ];
         
-        // prevent segue from occurring
+        
         
     }
-
+    
+    
     
 }
 @end

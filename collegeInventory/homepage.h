@@ -7,10 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface homepage : UIViewController{
+@interface homepage : UIViewController
     
-}
+
 
 @property (strong, nonatomic) IBOutlet NSString *username;
 @property (strong, nonatomic) IBOutlet NSString *passwrd;
