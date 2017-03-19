@@ -26,6 +26,7 @@
 		8485A5491E7DD3C100EE60F4 /* Request.png in Resources */ = {isa = PBXBuildFile; fileRef = 8485A53E1E7DD3C100EE60F4 /* Request.png */; };
 		8485A54A1E7DD3C100EE60F4 /* Setting.png in Resources */ = {isa = PBXBuildFile; fileRef = 8485A53F1E7DD3C100EE60F4 /* Setting.png */; };
 		8485A54B1E7DD3C100EE60F4 /* vsl-header-scm-Inventory-management.png in Resources */ = {isa = PBXBuildFile; fileRef = 8485A5401E7DD3C100EE60F4 /* vsl-header-scm-Inventory-management.png */; };
+		849AF8671E7F20FA00687FC4 /* welcome-pictures-30.png in Resources */ = {isa = PBXBuildFile; fileRef = 849AF8661E7F20FA00687FC4 /* welcome-pictures-30.png */; };
 		84A239341E6AF0C9005EEEE7 /* homepage.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A239331E6AF0C9005EEEE7 /* homepage.m */; };
 		84B206161E758A1900FE46CA /* myItems.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B206151E758A1900FE46CA /* myItems.m */; };
 		84B206191E758D7100FE46CA /* myfile2.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B206181E758D7100FE46CA /* myfile2.m */; };
@@ -88,6 +89,7 @@
 		8485A53E1E7DD3C100EE60F4 /* Request.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Request.png; sourceTree = SOURCE_ROOT; };
 		8485A53F1E7DD3C100EE60F4 /* Setting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Setting.png; sourceTree = SOURCE_ROOT; };
 		8485A5401E7DD3C100EE60F4 /* vsl-header-scm-Inventory-management.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "vsl-header-scm-Inventory-management.png"; sourceTree = SOURCE_ROOT; };
+		849AF8661E7F20FA00687FC4 /* welcome-pictures-30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "welcome-pictures-30.png"; sourceTree = SOURCE_ROOT; };
 		84A239321E6AF0C9005EEEE7 /* homepage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = homepage.h; sourceTree = "<group>"; };
 		84A239331E6AF0C9005EEEE7 /* homepage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = homepage.m; sourceTree = "<group>"; };
 		84B206141E758A1900FE46CA /* myItems.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myItems.h; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 		84577C741E4B85FD00E0C6CF /* MyIcon */ = {
 			isa = PBXGroup;
 			children = (
+				849AF8661E7F20FA00687FC4 /* welcome-pictures-30.png */,
 				8485A5361E7DD3C100EE60F4 /* Add.png */,
 				8485A5371E7DD3C100EE60F4 /* application-icon.png */,
 				8485A5381E7DD3C100EE60F4 /* login2-01.png */,
@@ -372,6 +375,7 @@
 				8485A5481E7DD3C100EE60F4 /* Report.png in Resources */,
 				8485A54B1E7DD3C100EE60F4 /* vsl-header-scm-Inventory-management.png in Resources */,
 				84BDF27F1E12C90B00BACB09 /* Assets.xcassets in Resources */,
+				849AF8671E7F20FA00687FC4 /* welcome-pictures-30.png in Resources */,
 				8485A5461E7DD3C100EE60F4 /* Profile.png in Resources */,
 				8485A5421E7DD3C100EE60F4 /* application-icon.png in Resources */,
 				8485A5471E7DD3C100EE60F4 /* purchase-guy.png in Resources */,
